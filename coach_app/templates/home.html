@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h2>enter keywords<br>
+        for your dream coach</h2>
+
+    <div>
+    <h3>[examples:
+        'holistic',<br>
+        'visionary',<br>
+        'autocratic',<br>
+        'solution-focused']</h3>
+        </div>
+
+    <form>
+        <input type="text" name = "keywords" style="font-size:60px" id="keywords">
+        <br>
+        <div id = "error">please do not enter text<br>just click 'search</div>
+        <button class="button-xlarge pure-button" onclick = "window.open('results');">search</button>
+    </form>
+
+
+{#    this script can be removed after upgrading prototype; -------------------------------------#}
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+
+        $('#keywords').hover(function () {
+            $("#error").css("visibility", "visible");
+        });
+
+    </script>
+
+
+{% endblock %}

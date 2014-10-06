@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <link href='http://fonts.googleapis.com/css?family=Quicksand|Raleway+Dots|Raleway:400,200' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{% static "css/style.css"%}">
+
+
+</head>
+<body>
+
+    <center>
+    <h1>coach.<font color="#99CCFF">io</font></h1>
+    {% block content %}
+    {% endblock %}
+    </center>
+
+</body>
+
+
+</html>

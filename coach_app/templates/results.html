@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h2>results for:<br>
+        <font color="red">san francisco</font>
+        <br><br>
+    <button class="button-xlarge pure-button" onclick = "window.open('/');">back</button>
+    </h2>
+
+    <br><br>
+
+    <table class = "pure-table">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>location</th>
+                <th>personality</th>
+                <th>description</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr class="pure-table-odd">
+                <td>Jan O'Brian</td>
+                <td>31 Thor St, San Francisco, CA 93101</td>
+                <td>INTP</td>
+                <td>prefers weekly basis;
+                    one-on-one preferred;
+                    but Skype available</td>
+            </tr>
+
+            <tr>
+                <td>Crystal Lee</td>
+                <td>31 Colbert South, San Francisco, CA 98616</td>
+                <td>ESFJ</td>
+                <td>let's make sessions fun!  </td>
+            </tr>
+
+            <tr class="pure-table-odd">
+                <td>Dr. Harry Goldstein</td>
+                <td>41 North Building, San Francisco, CA 98121</td>
+                <td>ESFP</td>
+                <td>specializes in CEO development, business coaching, entrepreneurs  </td>
+            </tr>
+
+          <tr>
+                <td>Julie Lewish</td>
+                <td>498 East St, San Francisco, CA 98121</td>
+                <td>INFJ</td>
+                <td>legal staffing and coaching; resume reviews; </td>
+            </tr>
+
+             <tr class="pure-table-odd">
+                <td>Garold Green</td>
+                <td>21 Market St, San Francisco, CA 98731</td>
+                <td>ENFJ</td>
+                <td>athletic coaching, training, goal-setting;</td>
+            </tr>
+
+            </tbody>
+
+    </table>
+
+
+
+{% endblock %}

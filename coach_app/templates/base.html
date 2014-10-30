@@ -5,19 +5,42 @@
     <meta charset="UTF-8">
     <title></title>
 
+    <!--fonts-->
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
     <link href='http://fonts.googleapis.com/css?family=Quicksand|Raleway+Dots|Raleway:400,200' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+    <!-- own stylesheet ---->
     <link rel="stylesheet" type="text/css" href="{% static "css/style.css"%}">
 
+    <!--- own JS ----->
+    <script type="text/javascript" src="static/js/sort.js"></script>
 
 </head>
 <body>
 
     <center>
+
+    <div class="pure-menu pure-menu-open pure-menu-horizontal">
+        <ul>
+            <li><a href="#">home</a></li>
+            <li class="pure-menu-selected" data-toggle="modal" data-target="#coach_login">coach sign in</li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </div>
+
     <h1>coach.<font color="#99CCFF">io</font></h1>
     {% block content %}
     {% endblock %}
-    </center>
 
 </body>
 

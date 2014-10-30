@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <!--fonts-->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <link href='http://fonts.googleapis.com/css?family=Quicksand|Raleway+Dots|Raleway:400,200' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+    <!-- own stylesheet ---->
+    <link rel="stylesheet" type="text/css" href="{% static "css/style.css"%}">
+
+    <!--- own JS ----->
+    <script type="text/javascript" src="static/js/sort.js"></script>
+
+</head>
+<body>
+
+    <center>
+
+   <div class="pure-menu pure-menu-open pure-menu-horizontal">
+        <ul>
+            <li><a href="home.html">home</a></li>
+            <li class="pure-menu-selected"><a href="coach_home.html" data-target="coach_login">coach sign in</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </div>
+
+    <h1>coach.<font color="#99CCFF">io</font></h1>
+  </center>
+
+    <div id = "container">
+    <img id = "image" src = "https://scontent-a-sjc.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10731165_10152379431515840_7745136662512157981_n.jpg?oh=b5127527d5692dcfe25ca84fe68f3824&oe=54E4F020">
+    <p id ="text">Jan O'Brian<br>executive / life / career coach</p>
+    </div>
+
+<br><br><br><br><br><br>
+<center>
+
+    <table class="pure-table pure-table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Next Appointment</th>
+                <th>Progress</th>
+                <th>Billing</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Katherine Levy</td>
+                <td>Life</td>
+                <td style="font-color:red">Tuesday, 3 pm</td>
+                <td>3 / 6</td>
+                <td>3 / 6</td>
+                <td>"made progress ..."</td>
+            </tr>
+
+            <tr>
+                <td>Dillan Smith</td>
+                <td>Executive</td>
+                <td>Wednesday, 8 am</td>
+                <td>5 / 20</td>
+                <td>3 / 20</td>
+                <td>"homework needs work ..."</td>
+            </tr>
+
+            <tr>
+                <td>Jill McDillan</td>
+                <td>Career</td>
+                <td>Thursday, 6 pm</td>
+                <td>2 / 10</td>
+                <td>10 / 10</td>
+                <td>"noting changes ..."</td>
+            </tr>
+        </tbody>
+    </table>
+
+<br><br><br>
+
+    <h5>today's insights</h5>
+<div class = "articles">
+
+    <a href = "http://www.psychologytoday.com/blog/struck-living/201410/shared-experience-depression-heals-two-two-cultures">
+    Shared Experience of Depression <br>Heals Two from Two Cultures</a>
+    (Psychology Today)<br><br>
+
+    <a href = "http://www.psychologytoday.com/blog/evolutionary-psychiatry/201410/gene-violence">
+    A Gene For Violence</a>
+    (Psychology Today)<br><br>
+
+    <a href = "http://www.psychologytoday.com/blog/the-homework-myth/201410/why-the-best-teachers-dont-give-tests">
+    Why the Best Teachers Don't Give Tests</a>
+    (Psychology Today)<br><br>
+
+    </a>
+</div>
+
+</center>
+
+</body>
+</html>

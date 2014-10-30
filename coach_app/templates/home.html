@@ -1,35 +1,102 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h2>enter keywords<br>
-        for your dream coach</h2>
+    <h2>keywords for your coach:</h2>
 
     <div>
-    <h3>[examples:
+    <h3>[examples:<br>
         'holistic',<br>
-        'visionary',<br>
-        'autocratic',<br>
-        'solution-focused']</h3>
-        </div>
+        'zen',<br>
+        'autocratic']<br>
+        </h3>
+     </div>
+
+    <br><br>
 
     <form>
         <input type="text" name = "keywords" style="font-size:60px" id="keywords">
-        <br>
-        <div id = "error">please do not enter text<br>just click 'search</div>
-        <button class="button-xlarge pure-button" onclick = "window.open('results');">search</button>
+        <br><br>
+        <button class="button-xlarge pure-button" data-toggle="modal" data-target="#myModal">search</button>
     </form>
 
 
-{#    this script can be removed after upgrading prototype; -------------------------------------#}
+<!-- Modal for search button -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h2 class="modal-title" id="myModalLabel">A few more details</h2>
+      </div>
+      <div class="modal-body">
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script>
+         <h5>1. Your ideal coach would be: <br><br>
 
-        $('#keywords').hover(function () {
-            $("#error").css("visibility", "visible");
-        });
+          <center>
+          <div class="btn-group" data-toggle="buttons">
+              <button type="button" class="btn btn-default">Introverted ;)</button>
+              <button type="button" class="btn btn-default">Extroverted !</button>
+          </div>
+          </center>
+          <br>
 
-    </script>
+         <h5>2. You'd prefer to: <br><br>
 
+           <center>
+           <select id = "focusID" class="form-control" style="font-size: 30px; width:400px; height:70px; ">
+               <option value="1">focus on past</option>
+               <option value="2">focus on future</option>
+               </select>
+           </center>
+         </h5>
+         <br>
+
+          <h5>3. Do you have (or ever had) a mental illness?  <br><br>
+
+                <center>
+                 <select id = "focusID" class="form-control" style="font-size: 30px; width:400px; height:70px; ">
+                    <option value="1">yes</option>
+                    <option value="2">no</option>
+                </select>
+                 </center>
+         </h5>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" onclick ="window.location.href = '/results.html'" class="btn btn-primary" data-target="results.html">Go</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{#<!---------------------!>#}
+
+<!-- Modal for coach login button -->
+<div class="modal fade" id="coach_login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h2 class="modal-title" id="myModalLabel">Login</h2>
+      <div class="modal-body">
+
+         <h5>Username: <br>
+              <input type="text"><br><br>
+
+        Password: <br>
+                <input type="text"><br><br>
+
+{#          </center>#}
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" onclick ="window.location.href = '/coach_home.html'" class="btn btn-primary" data-target="coach_home.html">Go</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{#<!---------------------!>#}
 
 {% endblock %}

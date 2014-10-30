@@ -4,6 +4,9 @@
 /*font-family: 'Raleway Dots', cursive;*/
 /*font-family: 'Raleway', sans-serif;*/
 
+
+
+
 h1, form {
     font-family: 'Raleway Dots', cursive;
     /*margin-left: auto;*/
@@ -27,6 +30,26 @@ h3 {
     text-align:left;
 }
 
+h4 {
+    font-family: 'Raleway', cursive;
+    color: #9DA7A7;
+    font-size:30px;
+}
+
+h5 {
+    font-family: 'Raleway Dots', cursive;
+    color: #9DA7A7;
+    font-size:30px;
+}
+
+
+.pure-menu {
+    font-family: 'Raleway', cursive;
+    color: #9DA7A7;
+    font-size:15px;
+    margin:30px;
+}
+
 table {
     font-family: 'Raleway Dots', cursive;
     font-size: 30px;
@@ -35,18 +58,75 @@ table {
 }
 
 .button-xlarge {
-    width:400px;
+    width:300px;
     height:150px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5px;
+    border-radius: 100px;
 }
 
-#error {
-   font-family: 'Quicksand', cursive;
-   font-size: 16px;
-   color:red;
-   visibility: hidden;
+.btn {
+    font-family: 'Raleway Dots', cursive;
+    color: #9DA7A7;
+    font-size:30px;
 }
 
+.btn-group {
+    margin-left: auto;
+    margin-right: auto;
 
+}
+
+.modal-body {
+    text-align:left;
+}
+
+.container {
+    width:120px;
+    height:200px;
+    /*overflow:hidden;*/
+
+}
+img.desaturate {
+    -webkit-filter:grayscale(100%):
+    -moz-filter:grayscale(100%);
+    filter:grayscale(100%);
+}
+
+#input {
+    font-size:24px;
+}
+
+/*text within coach profile  */
+
+#container {
+    height:400px;
+    width:500px;
+    position:relative;
+    left:15%;
+
+}
+
+#image {
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+#text {
+    z-index:50;
+    position:absolute;
+    color:white;
+    font-size:50px;
+    font-weight:bold;
+    left:10px;
+    top:250px;
+    font-family: 'Raleway Dots', cursive;
+}
+
+.articles {
+
+    font-family: 'Raleway Dots', cursive;
+    color: #9DA7A7;
+    font-size:30px;
+}

@@ -1,11 +1,120 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html>
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+
+    <!--fonts-->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <link href='http://fonts.googleapis.com/css?family=Quicksand|Raleway+Dots|Raleway:400,200' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+    <!-- own stylesheet ---->
+    <link rel="stylesheet" type="text/css" href="{% static "css/style.css"%}">
+
+    <!--- own JS ----->
+    <script type="text/javascript" src="static/js/sort.js"></script>
+
 </head>
 <body>
 
-hi i'm jan
+    <center>
+
+   <div class="pure-menu pure-menu-open pure-menu-horizontal">
+        <ul>
+            <li><a href="home.html">home</a></li>
+            <li class="pure-menu-selected"><a href="coach_home.html" data-target="coach_login">coach sign in</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </div>
+
+    <h1>coach.<font color="#99CCFF">io</font></h1>
+
+    <br>
+
+           <hr width=50%>
+           <br>
+
+    <div>
+        <p style = "float:center;"><img src = "http://img.breakingmuscle.com/sites/default/files/imagecache/full_width/images/bydate/20121108/extvsmilecropped.jpg" width="175" height="250">
+        <h1>Jan <br>O'Brian</h1>
+    </div>
+
+</center>
+
+<br>
+
+{#    class="pure-table pure-table-bordered"#}
+
+    <center>
+
+
+
+    <table style="align:center;" cellpadding="20">
+
+        <tbody>
+            <tr>
+                <td>Credentials:</td>
+                <td>ICF, Master Certified Coach</td>
+            </tr>
+
+             <tr>
+                <td>Philosophy:</td>
+                <td>live authentically<br>holistic<br>mind-body-connection</td>
+            </tr>
+
+            <tr>
+                <td>Address:</td>
+                <td><a href = "http://maps.google.com/?q=2771 Diamond St, San Francisco, CA 94131" target="_blank">2771 Diamond St, Glen Park, CA 94131</a></td>
+            </tr>
+
+            <tr>
+                <td>Rating:</td>
+                <td><span class="star-rating"></span></td>
+            </tr>
+
+             <tr>
+                <td>Communicate:</td>
+                <td><a href = "#" data-toggle="modal" data-target=".bs-example-modal-sm">Send message now!</a>
+
+            </tr>
+
+        </tbody>
+    </table>
+
+
+    </center>
+
+<!-- Small chat modal -->
+
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+
+      <h2>Dear Coach Jan: <br>
+         <br><br>
+             <input type="text" width="200" name="hello" placeholder="Dear Jan"><br><br><br>
+             <button type="button" class="btn btn-default" data-dismiss="modal">Send</button>
+            <br><br>
+          </h2>
+    </div>
+  </div>
+</div>
+
+
+<br><br><br>
+
+</center>
+
 </body>
 </html>

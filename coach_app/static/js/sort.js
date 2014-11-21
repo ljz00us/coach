@@ -35,5 +35,4 @@ var data = {
 
 $(document).on('ready', function() {
 
-    console.log(coach.sort()
 });

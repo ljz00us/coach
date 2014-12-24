@@ -109,13 +109,34 @@ table {
 
 }
 
-input {
+input, textarea {
     line-height:2em;
-    font-size:50px;
+    font-size:30px;
     font-family: 'Raleway Dots', cursive;
-    border-radius: 30px;
+    border-radius: 10px;
+    overflow:auto;
+    padding:6px;
 }
 
+#content {
+    background:#FFF;
+    margin-left: 15px;
+    margin-right: auto;
+    width:300px;
+    height:300px;
+    overflow:auto;
+}
+
+#content p {
+    padding:1em;
+    margin:1em;
+    background:#E6E6E6;
+    border:1px solid #DCDCDC;
+    font-size:15px;
+    text-align: left;
+    border-radius: 20px;
+
+}
 /*text within coach profile  */
 
 #container {

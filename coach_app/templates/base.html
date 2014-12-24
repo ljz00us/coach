@@ -16,6 +16,8 @@
 
     <!--jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.8.10/themes/smoothness/jquery-ui.css" type="text/css">
+    <script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/jquery-ui.min.js"></script>
 
     <!-- Bootstrap -->
 
@@ -35,6 +37,17 @@
     <!--- script --->
     <script src = "static/js/typed.js"></script>
 
+    <script type = "text/javascript">
+        $(document).ready(function() {
+            $('button').click(function() {
+                var message = $('textarea').val();
+                var old = $('#content').html();
+                $('#content').html(old + '<p>' + message + '</p>');
+            });
+        });
+
+    </script>
+
 </head>
 <body>
 
@@ -43,13 +56,13 @@
         <div class="pure-menu pure-menu-open pure-menu-horizontal">
             <ul>
                 <li><a href="#">home</a></li>
-                <li class="pure-menu-selected" data-toggle="modal" data-target="#coach_login">coach sign in</li>
+                <li class="pure-menu-selected" data-toggle="modal" data-target="#coach_login">provider sign in</li>
                 <li><a href="#"></a></li>
                 <li><a href="#"></a></li>
             </ul>
         </div>
 
-    <h1>coach.<font color="#99CCFF">io</font></h1>
+    <h1>upwards.<font color="#99CCFF">io</font></h1>
     {% block content %}
     {% endblock %}
 
